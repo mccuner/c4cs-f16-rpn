@@ -9,6 +9,7 @@ operators = {
 	'*': operator.mul,
 	'/': operator.truediv,
 	'^': operator.pow,
+	'%': operator.mod,
 }
 
 def calculate(myarg):
@@ -27,6 +28,12 @@ def calculate(myarg):
 	if len(stack) != 1:
 		raise TypeError("Too many parameters")
 	return stack.pop()
+
+def newFunction(some_data):
+	return (some_data * 20)
+
+def someOtherFunction(more_data):
+	return (more_data * 15)
 
 def main():
 	while True:
